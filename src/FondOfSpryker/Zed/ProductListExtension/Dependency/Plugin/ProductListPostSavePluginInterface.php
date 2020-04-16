@@ -5,11 +5,11 @@ namespace FondOfSpryker\Zed\ProductListExtension\Dependency\Plugin;
 use Generated\Shared\Transfer\ProductListResponseTransfer;
 use Generated\Shared\Transfer\ProductListTransfer;
 
-interface ProductListPreDeletePluginInterface
+interface ProductListPostSavePluginInterface
 {
     /**
      * Specification:
-     * - Plugin is triggered after product list object is deleted.
+     * - Plugin is triggered after product list object is saved.
      *
      * @api
      *
@@ -17,5 +17,5 @@ interface ProductListPreDeletePluginInterface
      *
      * @return \Generated\Shared\Transfer\ProductListResponseTransfer
      */
-    public function execute(ProductListTransfer $productListTransfer): ProductListResponseTransfer;
+    public function postSave(ProductListTransfer $productListTransfer): ProductListResponseTransfer;
 }
