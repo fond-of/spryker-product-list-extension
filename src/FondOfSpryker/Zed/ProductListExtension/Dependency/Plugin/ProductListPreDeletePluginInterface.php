@@ -2,7 +2,6 @@
 
 namespace FondOfSpryker\Zed\ProductListExtension\Dependency\Plugin;
 
-use Generated\Shared\Transfer\ProductListResponseTransfer;
 use Generated\Shared\Transfer\ProductListTransfer;
 
 interface ProductListPreDeletePluginInterface
@@ -15,7 +14,7 @@ interface ProductListPreDeletePluginInterface
      *
      * @param \Generated\Shared\Transfer\ProductListTransfer $productListTransfer
      *
-     * @return \Generated\Shared\Transfer\ProductListResponseTransfer
+     * @return void
      */
-    public function execute(ProductListTransfer $productListTransfer): ProductListResponseTransfer;
+    public function execute(ProductListTransfer $productListTransfer): void;
 }

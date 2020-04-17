@@ -1,6 +1,6 @@
 {
   "name": "fond-of-spryker/product-list-extension",
-  "description": "Extends product list extension module",
+  "description": "Own product list extension module",
   "license": "MIT",
   "authors": [
     {
@@ -9,8 +9,7 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
-    "spryker/product-list-extension": "^1.0.0"
+    "php": ">=7.1"
   },
   "require-dev": {
     "spryker/code-sniffer": "^0.14.7",
